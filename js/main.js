@@ -2,11 +2,11 @@ $(document).ready(function() {
 	
 	setTimeout(function(){
 		$("body").addClass('loaded');
-	}, 1500);
+	}, 2000);
 	
 });
 
-//<!--runs as soon as loaded-->
-$(function() {
-  $('#body').addClass('loaded');
-});
+// //<!--runs as soon as loaded-->
+// $(function() {
+//   $('#body').addClass('loaded');
+// });
