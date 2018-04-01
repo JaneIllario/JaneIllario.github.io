@@ -178,6 +178,9 @@ h2 {
     .no-js #loader-wrapper {
         display: none;
     }
+    .no-js h2 {
+        color: #FFFFFF;
+    }
 
 
 /*=====Hero Top=====*/
