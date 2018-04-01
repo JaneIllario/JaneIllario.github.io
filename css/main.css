@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #content {
-	font-family:'Open Sans',Courier,sans-serif;
+	font-family:'Courier New',Courier,"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	background:#FDD7B3;
 	font-weight:300;
 	height:100%;
@@ -11,7 +11,7 @@
 	color:#002349;
 }
 #body {
-	font-family:'Open Sans',Courier,sans-serif;
+	font-family:'Courier New',Courier,"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	background:#FDD7B3;
 	color: #FDD7B3;
 }
@@ -199,7 +199,7 @@ h2 {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	font-family:'Open Sans',Arial,sans-serif;
+	font-family:'Courier New',Courier,"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	}
 
 .masthead .container{
