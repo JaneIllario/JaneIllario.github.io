@@ -47,7 +47,7 @@ h3 {
 }
 h4 {
 	
-	font-size: 3.7em;
+	font-size: 3em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
@@ -462,7 +462,7 @@ to {
 	.tm-media-text-container { padding-left: 150px; padding-right: 100px;}
 	.tm-media-text-container-left { 
 		padding-left: 0; 
-		padding-right: 50px;
+		padding-right: 80px;
 	}
 	.tm-plan { margin-bottom: 0; }
 	.tm-section-3 {	padding: 90px 5% 100px;	}
