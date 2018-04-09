@@ -660,6 +660,9 @@ properly.
    margin-bottom: 48px;
    color: #95A3A3;
 }
+#portfolio h3 {
+	color: #425B7A;
+}
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
