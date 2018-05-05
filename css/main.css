@@ -449,7 +449,7 @@ to {
 	.tm-media-row {	-webkit-flex-direction: row;	-ms-flex-direction: row;	flex-direction: row; }
 	.tm-flex-child-2 { -webkit-order: 2; -ms-flex-order: 2; order: 2; }
 	.tm-flex-child-1 { -webkit-order: 1; -ms-flex-order: 1; order: 1; }
-	.tm-social-icon-link { margin-right: 15px; }		
+	.tm-social-icon-link { margin-right: 0px; }		
 }
 
 @media only screen and (min-width: 768px) {
@@ -459,43 +459,156 @@ to {
 	.cd-hero-slider { height: 630px; }
 	.tm-slide-content-div { padding: 5%; }
 	.cd-hero-slider p.m-b-mid { margin-bottom: 40px; }
-	.tm-media-text-container { padding-left: 150px; padding-right: 100px;}
+	.tm-media-text-container { padding-left: 150px; padding-right: 0px;}
 	.tm-media-text-container-left { 
 		padding-left: 0; 
-		padding-right: 80px;
+		padding-right: 0px;
 	}
 	.tm-plan { margin-bottom: 0; }
-	.tm-section-3 {	padding: 90px 5% 100px;	}
-	.tm-section-4 { padding: 80px 5% 110px; }
+	.tm-section-3 {	padding: 0px 5% 0px;	}
+	.tm-section-4 { padding: 0px 5% 0px; }
 }
 
 
+
+
 /*=====Things I Do=====*/
-.row-p {
+
+
+
+/*DEFAULTS*/
+/*  1. Basic  ------------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/*  2. Links  ------------------------------------------------------- */
+
+a, a:visited {
+   text-decoration: none;
+   outline: 0;
+   color: #11ABB0;
+
+   -webkit-transition: color .3s ease-in-out;
+   -moz-transition: color .3s ease-in-out;
+   -o-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+}
+a:hover, a:focus { color: #313131; }
+p a, p a:visited { line-height: inherit; }
+/*  3. Images  --------------------------------------------------------- */
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+img.pull-right { margin: 12px 0px 0px 18px; }
+img.pull-left { margin: 12px 18px 0px 0px; }
+
+/*  4. Buttons  --------------------------------------------------------- */
+
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+   font: 16px/30px 'opensans-bold', sans-serif;
+   background: #11ABB0;
+   display: inline-block;
+	text-decoration: none;
+   letter-spacing: 0;
+   color: #fff;
+	padding: 12px 20px;
+	margin-bottom: 18px;
+   border: none;
+   cursor: pointer;
+   height: auto;
+
+   -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+   background: #3d4145;
+   color: #fff;
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+   background: #3d4145;
+   color: #fff;
+}
+
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/* ------------------------------------------------------------------ */
+/* GRID
+---------------------------------------------------------------------
+   gutter = 40px.
+/* ------------------------------------------------------------------ */
+
+/* default
+--------------------------------------------------------------- */
+.row {
    width: 96%;
    max-width: 1020px;
    margin: 0 auto;
 }
 /* fixed width for IE8 */
-.ie .row-p { width: 1000px ; }
+.ie .row { width: 1000px ; }
 
-.narrow .row-p { max-width: 980px; }
+.narrow .row { max-width: 980px; }
 
-.row-p .row-p { width: auto; max-width: none; margin: 0 -20px; }
+.row .row { width: auto; max-width: none; margin: 0 -20px; }
 
 /* row clearing */
-.row-p:before,
-.row-p:after {
+.row:before,
+.row:after {
     content: " ";
     display: table;
 }
-.row-p:after {
+.row:after {
     clear: both;
 }
 
 .column, .columns {
    position: relative;
-   padding: 0 0px;
+   padding: 0px;
    min-height: 1px;
    float: left;
 }
@@ -505,63 +618,63 @@ to {
 }
 
 /* removed gutters */
-.row-p.collapsed > .column,
-.row-p.collapsed > .columns,
+.row.collapsed > .column,
+.row.collapsed > .columns,
 .column.collapsed, .columns.collapsed  { padding: 0; }
 
 [class*="column"] + [class*="column"]:last-child { float: right; }
 [class*="column"] + [class*="column"].end { float: right; }
 
 /* column widths */
-.row-p .one         { width: 8.33333%; }
-.row-p .two         { width: 16.66667%; }
-.row-p .three       { width: 25%; }
-.row-p .four        { width: 33.33333%; }
-.row-p .five        { width: 41.66667%; }
-.row-p .six         { width: 50%; }
-.row-p .seven       { width: 58.33333%; }
-.row-p .eight       { width: 66.66667%; }
-.row-p .nine        { width: 75%; }
-.row-p .ten         { width: 83.33333%; }
-.row-p .eleven      { width: 91.66667%; }
-.row-p .twelve      { width: 100%; }
+.row .one         { width: 8.33333%; }
+.row .two         { width: 16.66667%; }
+.row .three       { width: 25%; }
+.row .four        { width: 33.33333%; }
+.row .five        { width: 41.66667%; }
+.row .six         { width: 50%; }
+.row .seven       { width: 58.33333%; }
+.row .eight       { width: 66.66667%; }
+.row .nine        { width: 75%; }
+.row .ten         { width: 83.33333%; }
+.row .eleven      { width: 91.66667%; }
+.row .twelve      { width: 100%; }
 
 /* Offsets */
-.row-p .offset-1    { margin-left: 8.33333%; }
-.row-p .offset-2    { margin-left: 16.66667%; }
-.row-p .offset-3    { margin-left: 25%; }
-.row-p .offset-4    { margin-left: 33.33333%; }
-.row-p .offset-5    { margin-left: 41.66667%; }
-.row-p .offset-6    { margin-left: 50%; }
-.row-p .offset-7    { margin-left: 58.33333%; }
-.row-p .offset-8    { margin-left: 66.66667%; }
-.row-p .offset-9    { margin-left: 75%; }
-.row-p .offset-10   { margin-left: 83.33333%; }
-.row-p .offset-11   { margin-left: 91.66667%; }
+.row .offset-1    { margin-left: 8.33333%; }
+.row .offset-2    { margin-left: 16.66667%; }
+.row .offset-3    { margin-left: 25%; }
+.row .offset-4    { margin-left: 33.33333%; }
+.row .offset-5    { margin-left: 41.66667%; }
+.row .offset-6    { margin-left: 50%; }
+.row .offset-7    { margin-left: 58.33333%; }
+.row .offset-8    { margin-left: 66.66667%; }
+.row .offset-9    { margin-left: 75%; }
+.row .offset-10   { margin-left: 83.33333%; }
+.row .offset-11   { margin-left: 91.66667%; }
 
 /* Push/Pull */
-.row-p .push-1      { left: 8.33333%; }
-.row-p .pull-1      { right: 8.33333%; }
-.row-p .push-2      { left: 16.66667%; 	}
-.row-p .pull-2      { right: 16.66667%; }
-.row-p .push-3      { left: 25%; }
-.row-p .pull-3      { right: 25%;	}
-.row-p .push-4      { left: 33.33333%; }
-.row-p .pull-4      { right: 33.33333%; }
-.row-p .push-5      { left: 41.66667%; }
-.row-p .pull-5      { right: 41.66667%; }
-.row-p .push-6      { left: 50%; }
-.row-p .pull-6      { right: 50%; }
-.row-p .push-7      { left: 58.33333%; }
-.row-p .pull-7      { right: 58.33333%; }
-.row-p .push-8      { left: 66.66667%; 	}
-.row-p .pull-8      { right: 66.66667%; }
-.row-p .push-9      { left: 75%; }
-.row-p .pull-9      { right: 75%; }
-.row-p .push-10     { left: 83.33333%; }
-.row-p .pull-10     { right: 83.33333%; }
-.row-p .push-11     { left: 91.66667%; }
-.row-p .pull-11     { right: 91.66667%; }
+.row .push-1      { left: 8.33333%; }
+.row .pull-1      { right: 8.33333%; }
+.row .push-2      { left: 16.66667%; 	}
+.row .pull-2      { right: 16.66667%; }
+.row .push-3      { left: 25%; }
+.row .pull-3      { right: 25%;	}
+.row .push-4      { left: 33.33333%; }
+.row .pull-4      { right: 33.33333%; }
+.row .push-5      { left: 41.66667%; }
+.row .pull-5      { right: 41.66667%; }
+.row .push-6      { left: 50%; }
+.row .pull-6      { right: 50%; }
+.row .push-7      { left: 58.33333%; }
+.row .pull-7      { right: 58.33333%; }
+.row .push-8      { left: 66.66667%; 	}
+.row .pull-8      { right: 66.66667%; }
+.row .push-9      { left: 75%; }
+.row .pull-9      { right: 75%; }
+.row .push-10     { left: 83.33333%; }
+.row .pull-10     { right: 83.33333%; }
+.row .push-11     { left: 91.66667%; }
+.row .pull-11     { right: 91.66667%; }
 
 /* block grids
 --------------------------------------------------------------------- */
@@ -599,9 +712,9 @@ properly.
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
-   .row-p {
-	   width: 460px;
-	   margin: 0 auto;
+   .row {
+	   /*width: 460px;*/
+	   margin: 0;
       padding: 0;
 	}
    .column, .columns {
@@ -609,32 +722,32 @@ properly.
 	   float: none;
 	   margin-left: 0;
 	   margin-right: 0;
-      padding: 0 30px;
+      padding:0px;
    }
-   .row-p .row-p { width: auto; max-width: none; margin: 0 -30px; }
+   .row .row { width: auto; max-width: none; margin: 0 -30px; background: #ebeeee;}
 
    [class*="column"] + [class*="column"]:last-child { float: none; }
    [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: none; }
 
    /* Offsets */
-   .row-p .offset-1    { margin-left: 0%; }
-   .row-p .offset-2    { margin-left: 0%; }
-   .row-p .offset-3    { margin-left: 0%; }
-   .row-p .offset-4    { margin-left: 0%; }
-   .row-p .offset-5    { margin-left: 0%; }
-   .row-p .offset-6    { margin-left: 0%; }
-   .row-p .offset-7    { margin-left: 0%; }
-   .row-p .offset-8    { margin-left: 0%; }
-   .row-p .offset-9    { margin-left: 0%; }
-   .row-p .offset-10   { margin-left: 0%; }
-   .row-p .offset-11   { margin-left: 0%; }
+   .row .offset-1    { margin-left: 0%; }
+   .row .offset-2    { margin-left: 0%; }
+   .row .offset-3    { margin-left: 0%; }
+   .row .offset-4    { margin-left: 0%; }
+   .row .offset-5    { margin-left: 0%; }
+   .row .offset-6    { margin-left: 0%; }
+   .row .offset-7    { margin-left: 0%; }
+   .row .offset-8    { margin-left: 0%; }
+   .row .offset-9    { margin-left: 0%; }
+   .row .offset-10   { margin-left: 0%; }
+   .row .offset-11   { margin-left: 0%; }
 }
 
 /* mobile narrow
 --------------------------------------------------------------- */
 @media only screen and (max-width: 460px) {
 
-   .row-p { width: auto; }
+   .row { width: auto; }
 
 }
 
@@ -642,13 +755,51 @@ properly.
 --------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
 
-   .wide .row-p { max-width: 1180px; }
+   .wide .row { max-width: 1180px; }
 
 }
 
+/* ------------------------------------------------------------------ */
+/* e. Others
+/* ------------------------------------------------------------------ */
+
+/*  1. Clearing
+    (http://nicolasgallagher.com/micro-clearfix-hack/
+--------------------------------------------------------------------- */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+/*  Misc -------------------------------------------------------- */
+
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 12px !important; }
+.add-bottom { margin-bottom: 24px !important; }
+.no-border { border: none; }
+
+.text-center  { text-align: center !important; }
+.text-left    { text-align: left !important; }
+.text-right   { text-align: right !important; }
+.pull-left    { float: left !important; }
+.pull-right   { float: right !important; }
+.align-center {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	text-align: center !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Portfolio Section
+/* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background-color: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -659,16 +810,18 @@ properly.
    text-align: center;
    margin-bottom: 48px;
    color: #95A3A3;
+   background: #ebeeee;
 }
 #portfolio h3 {
-	color: #425B7A;
-	text-align: center;
+   color: #425B7A;
+   text-align: center;
+   background: #ebeeee;
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper .columns { margin-bottom: 36px; background: #ebeeee;}
 .portfolio-item .item-wrap {
-   background: #fff;
+   background: #ebeeee;
    overflow: hidden;
    position: relative;
 
@@ -681,6 +834,7 @@ properly.
 .portfolio-item .item-wrap a {
    display: block;
    cursor: pointer;
+   background: #ebeeee;
 }
 
 /* overlay */
@@ -710,6 +864,7 @@ properly.
    font-size: 18px;
    line-height: 30px;
    text-align: center;
+   background: #ebeeee;
 
    opacity: 0;
 	-moz-opacity: 0;
@@ -728,6 +883,7 @@ properly.
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+   background: #ebeeee;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
@@ -816,4 +972,52 @@ properly.
 /* content fadeout */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
+}
+
+
+
+
+/*=====Things I Do filter and nav=====*/
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#projects {
+    width: 100%;
+    background: #ebeeee;
+}
+
+.project-filter {
+  margin-bottom: 40px;
+  background: #ebeeee;
+}
+
+.project-filter ul li {
+  padding: 0;
+  background: #ebeeee;
+}
+
+.project-filter ul li a {
+  display: block;
+  line-height: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #425B7A;
+  background: #ebeeee;
+}
+
+.project-filter ul li a:hover,
+.project-filter ul li a.active {
+    background-color: #ffcbb5;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.mix {
+    display: none;
 }

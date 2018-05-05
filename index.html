@@ -5,6 +5,7 @@
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IBM Plex Serif'>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
@@ -52,7 +53,7 @@
 
 		<div class="row tm-media-row">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <img src="JaneIllario.github.io/images/profile/IMG_8797.JPG" alt="Why isn't my picture showing up??" class="img-fluid img-circle img-thumbnail tm-media-img">
+                    <img src="images/profile/IMG_8797.JPG" alt="Why isn't my picture showing up??" class="img-fluid img-circle img-thumbnail tm-media-img">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <div class="tm-media-text-container">
@@ -69,11 +70,22 @@
 <!---THINGS I DO-->
 <section id="portfolio">
 
-      <div class="row-p">
+      <div class="row-p" bgcolor="#ebeeee">
 
          <div class="twelve columns collapsed">
 
             <h3 class="tm-media-title tm-gray-text"><strong>Things I Do</h3></strong>
+
+            <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="0.5s">
+		        <ul class="list-inline">
+		            <li><a href="javascript:;" class="filter" data-filter="all">All</a></li>
+		            <li><a href="javascript:;" class="filter" data-filter=".hackathons">Hackathons</a></li> <!-- was .app -->
+		            <li><a href="javascript:;" class="filter" data-filter=".coolevents">Cool Events</a></li> <!-- was .photog -->
+		            <li><a href="javascript:;" class="filter" data-filter=".projects">Projects</a></li> <!-- EXTRA -->
+		            <li><a href="javascript:;" class="filter" data-filter=".involvement">Involvement</a></li> <!-- was .web -->
+		            <li><a href="javascript:;" class="filter" data-filter=".otherrandom">Other Random</a></li> <!-- was .print -->
+		        </ul>
+     		</nav>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -85,8 +97,8 @@
                         <img alt="" src="images/portfolio/coffee.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
+          					      <h5>Hackmining</h5>
+                              <p>Hackathon</p>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
