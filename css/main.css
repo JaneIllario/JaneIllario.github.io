@@ -835,6 +835,10 @@ properly.
 }
 
 /* overlay */
+
+@import url("fontello/css/fontello.css");
+
+
 .portfolio-item .item-wrap .overlay {
    position: absolute;
    left: 0;
