@@ -20,7 +20,8 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/main.js"></script>
-<body>
+
+<body data-spy="scroll" data-target=".nav-wrap">
 	<div id=body>
 
 <!---PRELOADER-->
@@ -33,6 +34,23 @@
 		</div>
 
 <!---CONTENT REVEAL/HERO-->	
+
+<header class="mobile">
+  <div class="row">
+    <div class="col full">
+      <div class="logo"> <a href="#"><img alt="" src="images/logo.png"></a> </div>
+      <nav id="nav-wrap"> <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a> <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav">
+          <li><a href="#index">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
 <!-- old content body		<div id="content">
 		    <h1>Hello World</h1>
@@ -66,7 +84,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <div class="tm-media-text-container">
-                        <h3 class="tm-media-title tm-gray-text"><strong>A bit about me</h3></strong>
+                        <h3 class="tm-media-title tm-gray-text"><strong>A bit about me</strong></h3>
                         <h4 class="tm-media-description tm-gray-text-2">Hey, it's Jane! I am a Computer Engineering student at the University of Toronto, specializing in Software and Machine Intelligence. I love building things that solve problems, improving those solutions, and finding better ways of going about all of it -- especially through software.</h4>    
                     </div>                    
                 </div>
@@ -79,11 +97,7 @@
 <!---THINGS I DO-->
 <section id="portfolio">
 
-      <div class="row-p">
-
-         <div class="twelve columns collapsed">
-
-            <h3 class="tm-media-title tm-gray-text"><strong>Things I Do<br></h3></strong>
+            <h3 class="tm-media-title tm-gray-text"><strong>Things I Do<br></strong></h3>
 
             <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="0.5s">
 		        <ul class="list-inline">
@@ -168,10 +182,6 @@
                   </div>
           		</div> <!-- item end -->
 
-      		</div> <!-- portfolio-wrapper end -->
-
-    	</div> <!-- twelve columns end -->
-
 
     	<!-- THINGS I DO POPUPS -->
 
@@ -179,16 +189,16 @@
 
 		      <img class="scale-with-grid" src="images/portfolio/hackmining.jpg" alt="" />
 
-		      <div class="description-box">
-			      <h4>Hackminig</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+		        <div class="description-box">
+			         <h4>Hackminig</h4>
+			             <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
+		         </div>
 
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+		            <a class="popup-modal-dismiss">Close</a>
+              </div>
 
 	      </div><!-- modal-01 End -->
 
@@ -243,7 +253,7 @@
 
 	      </div><!-- modal-04 End -->
 
-    	</div> <!-- row End -->
+
 
       <div class="row-p">
 
@@ -396,16 +406,13 @@
         </div><!-- modal-04 End -->
 
       </div> <!-- row End -->
+  </div>
 
 
-
-   </section> <!-- Portfolio Section End-->
-
+</section> <!-- Portfolio Section End-->
 
 
-
-
-	</div>
+</div>
 
 
 </body>
