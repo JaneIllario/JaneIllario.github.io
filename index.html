@@ -21,43 +21,40 @@
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/main.js"></script>
 
+<!---PRELOADER-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+     
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
+    </div>
+
+ 
 <body data-spy="scroll" data-target="#nav-wrap" id=body>
 
-
-<!---PRELOADER-->
-		<div id="loader-wrapper">
-		    <div id="loader"></div>
-		 
-		    <div class="loader-section section-left"></div>
-		    <div class="loader-section section-right"></div>
-		 
-		</div>
-
-<!---CONTENT REVEAL/HERO-->	
-
-<header class="mobile">
-  <div class="row">
+ <div class="row">
     <div class="col full">
       <div class="logo"> <a href="#"><img alt="" src="images/logo.png"></a> </div>
-      <nav id="nav-wrap"> <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a> <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-        <ul id="nav" class="nav">
+      <nav id="nav-wrap" class="navbar"> <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a> <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav navbar-nav" class="nav">
           <li><a href="#index">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#journal">Journal</a></li>
+          <li><a href="#intro">Introduction</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </div>
-</header>
+
+<!---CONTENT REVEAL/HERO-->
 
 <!-- old content body		<div id="content">
 		    <h1>Hello World</h1>
 			<p>Index page for personal portfolio</p>
 		</div> -->
 
-		<main id="top" class="masthead" role="main">
+		<div id="index" class="masthead" role="main">
 			<div class="container">
 				<br>
 				<h2><strong>Hello World!<br> I'm</strong></h2>
@@ -67,18 +64,17 @@
 
 				<br><br><br><br><br><br><br><br>
 	 
-				<a href="index.html#about" class="scrollto">
+				<a href="index.html#intro" class="scrollto">
 				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
 				</a>
 
 			</div><!--container -->
-		</main><!--main -->
+		</div><!--main -->
 
 <!---ABOUT-->	
 
-	<section id="about">
 
-		<div class="row tm-media-row">
+		<div id="intro" class="row tm-media-row">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <img src="images/profile/IMG_8797.JPG" alt="Why isn't my picture showing up??" class="img-fluid img-circle img-thumbnail tm-media-img">
                 </div>
@@ -88,14 +84,11 @@
                         <h4 class="tm-media-description tm-gray-text-2">Hey, it's Jane! I am a Computer Engineering student at the University of Toronto, specializing in Software and Machine Intelligence. I love building things that solve problems, improving those solutions, and finding better ways of going about all of it -- especially through software.</h4>    
                     </div>                    
                 </div>
-            </div>
-
-
-   </section> <!-- About Section End-->
+            </div> <!-- About Section End-->
 
 
 <!---THINGS I DO-->
-<section id="portfolio">
+<div id="portfolio">
 
             <h3 class="tm-media-title tm-gray-text"><strong>Things I Do<br></strong></h3>
 
@@ -392,7 +385,7 @@
 
     </div>
 
-</section> <!-- Portfolio Section End-->
+</div> <!-- Portfolio Section End-->
 
 </body>
 </html>

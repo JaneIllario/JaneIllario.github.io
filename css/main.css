@@ -12,7 +12,7 @@
 
 #body {
     font-family: 'IBM Plex Serif', monospace;
-    background:#FDD7B3;
+    /*background:#FDD7B3;*/
 	color: #FDD7B3;
 	font-size: 100%;
 }
@@ -198,6 +198,8 @@ h4 {
     }
     .no-js h2 {
         color: #FFFFFF;
+
+
     }
 /*=====Nav Top=====*/
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -433,23 +435,23 @@ to {
 
 
 
-/*=====About=====*/
+/*=====intro=====*/
 
 
 
-#about {
+#intro {
    background: #FFFFFF;
    padding-top: 120px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about h2{
+#intro h2{
 	color:#01143C;
 	font-weight: 900;
 	font-size: 42;
 }
-#about h3 {
+#intro h3 {
    color: #425B7A;
 }
 
@@ -482,6 +484,7 @@ to {
 .tm-media-description {	line-height: 2em; }
 
 .tm-media-row {
+	background: #FFFFFF;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -539,11 +542,7 @@ to {
 
 *,
 *:before,
-*:after {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
+*:after 
 /*  2. Links  ------------------------------------------------------- */
 
 a, a:visited {
