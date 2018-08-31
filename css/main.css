@@ -1095,35 +1095,192 @@ ol, ul {
 }
 
 
-/* post nav*/
-/* post-nav */
-.post .post-nav {
-   margin: 24px 0;
-   padding: 30px 0 0 0;
-   border-top: 1px solid #E0E0E0;
-   font: 16px/30px opensans-light, sans-serif;
+
+/* b. Header Styles
+
+/* ================================================================== */
+
+header {
+   height: 54px;
+   width: 100%;
+   z-index: 99999;
+   background: url(../images/k-opacity-70.png);
+
+   position: fixed;
+   top: 0;
+   left: 0;
 }
-.post .post-nav li {
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-   width: 49%;
-   line-height: 30px;
+header.static {
+   background: #232629;
+   position: static;
 }
-.post .post-nav li a { color: #a3a3a3; }
-.post .post-nav li a:hover { color: #333; }
-.post .post-nav li strong {
-   font: 15px/30px opensans-bold, sans-serif;
-   text-transform: uppercase;
-   color: #11ABB0;
-   letter-spacing: 1px;
-   display: block;
-}
-.post .post-nav li.next {
-   float: right;
-   text-align: right;
-}
-.post .post-nav li.prev {
-   float: left;
-   text-align: left;
-}
+
+/* mobile navigation
+   -------------------------------------------------------------------- */
+
+   header.mobile { height: 66px; }
+   header.mobile .logo a { top: 22px; }
+
+   .mobile #nav-wrap {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: auto;
+      margin: 0;
+   }
+   .mobile #nav-wrap > a {
+	   width: 48px;
+		height: 48px;
+		text-align: left;
+		background-color: #11ABB0;
+		position: relative;
+      border: none;
+      float: right;
+
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      }
+
+	.mobile #nav-wrap > a:before,
+   .mobile #nav-wrap > a:after {
+	   position: absolute;
+		border: 2px solid #fff;
+		top: 35%;
+		left: 25%;
+		right: 25%;
+		content: '';
+	}
+   .mobile #nav-wrap > a:after { top: 60%; }
+
+   /* toggle buttons */
+	.mobile #nav-wrap:not( :target ) > a:first-of-type,
+	.mobile #nav-wrap:target > a:last-of-type  {
+	   display: block;
+	}
+
+   /* hide menu panel */
+   .mobile #nav-wrap ul#nav {
+      height: auto;
+		display: none;
+      clear: both;
+   }
+   .mobile #nav-wrap ul#nav li {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+   }
+   .mobile #nav-wrap ul#nav > li.active a {
+      color: #11ABB0 !important;
+      background: none;
+   }
+
+   /* display menu panels */
+	.mobile #nav-wrap:target > ul#nav	{
+	   display: block;
+      padding: 12px 25px 24px 25px;
+      background: #4c4e5a;
+      margin: 0;
+      clear: both;
+   }
+   .mobile #nav-wrap ul#nav li { border-bottom: 1px dotted #595B6A; }
+   .mobile #nav-wrap ul#nav li a {
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      margin: 10px 0;
+      line-height: 14px;
+      border: none;
+   }
+ /* mobile wide
+---------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+   /* center align some text */
+   .section-head, .intro, #about h3,
+   #journal .entry-header {
+      text-align: center;
+   }
+
+
+   /* mobile navigation
+   -------------------------------------------------------------------- */
+
+   header.mobile { height: 66px; }
+   header.mobile .logo a { top: 22px; }
+
+   .mobile #nav-wrap {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: auto;
+      margin: 0;
+   }
+   .mobile #nav-wrap > a {
+	   width: 48px;
+		height: 48px;
+		text-align: left;
+		background-color: #11ABB0;
+		position: relative;
+      border: none;
+      float: right;
+
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      }
+
+   .mobile #nav-wrap > a:before,
+   .mobile #nav-wrap > a:after {
+	   position: absolute;
+		border: 2px solid #fff;
+		top: 35%;
+		left: 25%;
+		right: 25%;
+		content: '';
+	}
+   .mobile #nav-wrap > a:after { top: 60%; }
+
+   /* toggle buttons */
+	.mobile #nav-wrap:not( :target ) > a:first-of-type,
+	.mobile #nav-wrap:target > a:last-of-type  {
+	   display: block;
+	}
+
+   /* hide menu panel */
+   .mobile #nav-wrap ul#nav {
+      height: auto;
+		display: none;
+      clear: both;
+   }
+   .mobile #nav-wrap ul#nav li {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+   }
+   .mobile #nav-wrap ul#nav > li.active a {
+      color: #11ABB0 !important;
+      background: none;
+   }
+
+   /* display menu panels */
+	.mobile #nav-wrap:target > ul#nav	{
+	   display: block;
+      padding: 12px 25px 24px 25px;
+      background: #4c4e5a;
+      margin: 0;
+      clear: both;
+   }
+   .mobile #nav-wrap ul#nav li { border-bottom: 1px dotted #595B6A; }
+   .mobile #nav-wrap ul#nav li a {
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      margin: 10px 0;
+      line-height: 14px;
+      border: none;
+   }
+
