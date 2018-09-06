@@ -247,7 +247,7 @@ ul#nav li {
    display: inline-block;
 }
 ul#nav > li.active a {
-   background: #11ABB0;
+   background: #FDD7B3;
    color: #fff !important;
 }
 
@@ -269,7 +269,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li:hover > a,
-ul#nav li.active a { color: #11ABB0; }
+ul#nav li.active a { color: #FDD7B3; }
 
 
 
@@ -561,7 +561,7 @@ to {
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: #FDD7B3;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
@@ -588,7 +588,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #11ABB0;
+   background: #FDD7B3;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
@@ -882,12 +882,17 @@ properly.
 }
 #portfolio h3 {
    color: #425B7A;
-   text-align: center;
    background: #ebeeee;
+   letter-spacing: 1.5px;
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { padding-bottom:36px; background-color: #ebeeee;}
+#portfolio-wrapper .col {
+	width: 33.33333%;
+    margin-bottom: 30px; 
+	padding-bottom:36px; 
+	background-color: #ebeeee;}
+
 .portfolio-item .item-wrap {
    background: #ebeeee;
    overflow: hidden;
@@ -1021,7 +1026,7 @@ properly.
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
+.popup-modal a:hover {	color: #FDD7B3; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
@@ -1093,6 +1098,39 @@ ol, ul {
 .mix {
     display: none;
 }
+
+/*=======THINGS I DO (services style)===========*/
+#portfolio {
+   background: #ebeeee url(../images/patterns/servicesbg.png);
+   padding-top: 156px;
+   padding-bottom: 120px;
+   color: #425B7A;
+}
+
+#portfolio a, #portfolio a:visited  { color: #425B7A; }
+#portfolio a:hover, #portfolio a:focus { color: #425B7A; }
+
+#portfolio .section-head h2 { color: #425B7A; }
+#portfolio .section-head p.desc,
+#portfolio .section-head .intro { color: #425B7A; }
+
+.portfolio-wrapper { margin-top: 42px; }
+.portfolio-wrapper .col {
+   width: 33.33333%;
+   margin-bottom: 30px;
+}
+.portfolio-wrapper h2 {
+   font: 16px/24px montserrat-bold, sans-serif;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   color: #425B7A;
+   margin-bottom: 18px;
+}
+.portfolio-wrapper p {
+   font-size: 16px;
+   line-height: 30px;
+}
+#portfolio .portfolio-wrapper i { margin-right: 10px; }
 
 
 
@@ -1201,7 +1239,14 @@ header.static {
    /* center align some text */
    .section-head, .intro, #about h3,
    #journal .entry-header {
-      text-align: center;
+      text-align: center;}
+
+   /* services section
+   -------------------------------------------------------------------- */
+   #portfolio .portfolio-head .col { width: 100%; }
+   #portfolio .portfolio-wrapper { margin-top: 12px; }
+   #portfolio .portfolio-wrapper .col { width: 50%; }
+   #portfolio .portfolio-wrapper .col { margin-bottom: 0; }
    }
 
 
@@ -1222,7 +1267,7 @@ header.static {
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #11ABB0;
+		background-color: #FFFFFF;
 		position: relative;
       border: none;
       float: right;
@@ -1262,7 +1307,7 @@ header.static {
       text-align: left;
    }
    .mobile #nav-wrap ul#nav > li.active a {
-      color: #11ABB0 !important;
+      color: #FDD7B3 !important;
       background: none;
    }
 
@@ -1270,11 +1315,11 @@ header.static {
 	.mobile #nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 12px 25px 24px 25px;
-      background: #4c4e5a;
+      background: #FDD7B3;
       margin: 0;
       clear: both;
    }
-   .mobile #nav-wrap ul#nav li { border-bottom: 1px dotted #595B6A; }
+   .mobile #nav-wrap ul#nav li { border-bottom: 1px dotted #FDD7B3; }
    .mobile #nav-wrap ul#nav li a {
       margin: 0;
       padding: 0;
