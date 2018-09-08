@@ -869,14 +869,14 @@ properly.
 #portfolio {
    background-color: #ebeeee;
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 10px;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   margin-bottom: 48px;
+   margin-bottom: 20px;
    color: #95A3A3;
    background: #ebeeee;
 }
@@ -889,8 +889,8 @@ properly.
 /* Portfolio Content */
 #portfolio-wrapper .col {
 	width: 33.33333%;
-    margin-bottom: 30px; 
-	padding-bottom:36px; 
+    margin-bottom: 10px; 
+	padding-bottom:16px; 
 	background-color: #ebeeee;}
 
 .portfolio-item .item-wrap {
@@ -1102,8 +1102,8 @@ ol, ul {
 /*=======THINGS I DO (services style)===========*/
 #portfolio {
    background: #ebeeee url(../images/patterns/servicesbg.png);
-   padding-top: 156px;
-   padding-bottom: 120px;
+   padding-top: 56px;
+   padding-bottom: 40px;
    color: #425B7A;
 }
 
@@ -1448,7 +1448,7 @@ header.static {
    /* display menu panels */
 	.mobile #nav-wrap:target > ul#nav	{
 	   display: block;
-      padding: 12px 25px 24px 25px;
+      padding: 12px 25px 12px 25px;
       background: #4c4e5a;
       margin: 0;
       clear: both;
