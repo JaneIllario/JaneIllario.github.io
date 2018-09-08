@@ -1401,7 +1401,7 @@ header.static {
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #FFFFFF;
+		background-color: #4c4e5a;
 		position: relative;
       border: none;
       float: right;
@@ -1449,7 +1449,7 @@ header.static {
 	.mobile #nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 12px 25px 24px 25px;
-      background: #FDD7B3;
+      background: #4c4e5a;
       margin: 0;
       clear: both;
    }
