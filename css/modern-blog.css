@@ -230,7 +230,7 @@ body.body--hidden .header {
 
 a {
 	text-decoration: none;
-	color: #de6551 !important;
+	/*color: #de6551 !important;*/
 	outline: none;
 }
 
